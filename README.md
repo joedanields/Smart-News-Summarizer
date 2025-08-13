@@ -1,4 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
 
 # Smart News Summarizer
 
@@ -10,7 +9,7 @@
 
 *Transform lengthy news articles into concise, intelligent summaries using state-of-the-art AI*
 
-[Features](#features) -  [Installation](#installation) -  [Quick Start](#quick-start) -  [Demo](#demo) -  [API Reference](#api-reference)
+
 
 </div>
 
@@ -79,7 +78,7 @@ Smart News Summarizer is an AI-powered web application that automatically extrac
 ### Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/your-username/smart-news-summarizer.git
+git clone https://github.com/joedanields/smart-news-summarizer.git
 cd smart-news-summarizer
 ```
 
@@ -203,44 +202,6 @@ smart-news-summarizer/
 
 ## 🔧 Configuration
 
-### Environment Variables
-
-Create a `.env` file for optional configuration:
-
-```env
-# Model Configuration
-MODEL_NAME=facebook/bart-large-cnn
-DEVICE=auto  # auto, cpu, cuda:0
-
-# Processing Settings
-MAX_ARTICLE_LENGTH=2800
-TIMEOUT_SECONDS=30
-BATCH_SIZE=1
-
-# Web Scraping
-USER_AGENT=Mozilla/5.0 (Smart-News-Summarizer)
-REQUEST_DELAY=1.0
-```
-
-
-### Advanced Settings
-
-Modify `config.py` for custom configurations:
-
-```python
-# Summary length configurations
-SUMMARY_CONFIGS = {
-    'short': {'max_length': 80, 'min_length': 40},
-    'medium': {'max_length': 150, 'min_length': 80},
-    'detailed': {'max_length': 300, 'min_length': 150}
-}
-
-# Supported news sources
-SUPPORTED_DOMAINS = [
-    'bbc.com', 'cnn.com', 'reuters.com', 'theguardian.com',
-    'timesofindia.indiatimes.com', 'techcrunch.com', 'npr.org'
-]
-```
 
 
 ## 🧪 Testing
