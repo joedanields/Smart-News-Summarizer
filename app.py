@@ -2,13 +2,13 @@ import streamlit as st
 import time
 import validators
 from scraper import NewsExtractor
-from summarizer import SmartSummarizer
+from efficient_summarizer import EfficientSummarizer
 from config import config
 import plotly.express as px
 
 # Page configuration
 st.set_page_config(
-    page_title="Smart News Summarizer",
+    page_title="Efficient News Summarizer",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="collapsed"  # Start with sidebar hidden
@@ -72,7 +72,7 @@ st.markdown("""
 @st.cache_resource
 def load_ai_components():
     """Load AI components with caching"""
-    return NewsExtractor(), SmartSummarizer()
+    return NewsExtractor(), EfficientSummarizer()
 
 # Main App Logic
 def main():
@@ -112,7 +112,7 @@ def show_showcase_mode():
     st.markdown('<div class="showcase-mode">', unsafe_allow_html=True)
     
     # Clean header
-    st.markdown('<h1 class="main-header">🧠 Smart News Summarizer</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🧠 Efficient News Summarizer</h1>', unsafe_allow_html=True)
     st.markdown('<p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 3rem;">Transform lengthy articles into intelligent summaries using advanced AI</p>', unsafe_allow_html=True)
     
     # Load AI components
